@@ -1,0 +1,36 @@
+{
+	"name": "siteparts/plates-asset",
+	"description": "Generate cache busted web assets URLs in Plates",
+	"license": "BSD-3-Clause",
+	"keywords": [
+		"plates",
+		"extension",
+		"asset",
+		"helper"
+	],
+	"homepage": "https://github.com/siteparts/plates-asset",
+	"support": {
+		"issues": "https://github.com/siteparts/plates-asset/issues",
+		"source": "https://github.com/siteparts/plates-asset"
+	},
+	"config": {
+		"sort-packages": true
+	},
+	"extra": {
+		"laminas": {
+			"config-provider": "SiteParts\\Templating\\Plates\\Extension\\Asset\\ConfigProvider"
+		}
+	},
+	"autoload": {
+		"psr-4": {
+			"SiteParts\\Templating\\Plates\\Extension\\Asset\\": "src/"
+		}
+	},
+	"require": {
+		"league/plates": "^3.1",
+		"siteparts/asset": "^0.1.0"
+	},
+	"suggest": {
+		"psr/container": "^1.0 to use the factory"
+	}
+}
