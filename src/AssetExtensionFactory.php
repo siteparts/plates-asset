@@ -18,8 +18,16 @@ class AssetExtensionFactory
 			);
 		}
 
+		$assetHelper = $container->get(AssetHelper::class);
+
+		if (!($assetHelper instanceof AssetHelper)) {
+			throw new RuntimeException(
+				AssetExtension::class . ' requires an instance of ' . AssetHelper::class . '.'
+			);
+		}
+
 		return new AssetExtension(
-			$container->get(AssetHelper::class)
+			$assetHelper
 		);
 	}
 }

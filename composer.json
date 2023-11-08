@@ -28,9 +28,12 @@
 	},
 	"require": {
 		"league/plates": "^3.1",
-		"siteparts/asset": "^0.1.0"
+		"siteparts/asset": "^1.0"
+	},
+	"require-dev": {
+		"phpstan/phpstan": "^1.10"
 	},
 	"suggest": {
-		"psr/container": "^1.0 to use the factory"
+		"psr/container": "^1.0 || ^2.0 to use the factory"
 	}
 }

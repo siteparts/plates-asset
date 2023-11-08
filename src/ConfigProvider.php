@@ -6,6 +6,16 @@ namespace SiteParts\Templating\Plates\Extension\Asset;
 
 class ConfigProvider
 {
+	/**
+	 * @return array{
+	 *     dependencies: array{
+	 *         factories: array<string, string>,
+	 *     },
+	 *     plates: array{
+	 *         extensions: string[],
+	 *     },
+	 * }
+	 */
 	public function __invoke() : array
 	{
 		return [
@@ -14,6 +24,11 @@ class ConfigProvider
 		];
 	}
 
+	/**
+	 * @return array{
+	 *     factories: array<string, string>,
+	 * }
+	 */
 	public function getDependencies() : array
 	{
 		return [
@@ -23,6 +38,11 @@ class ConfigProvider
 		];
 	}
 
+	/**
+	 * @return array{
+	 *     extensions: string[],
+	 * }
+	 */
 	public function getPlates() : array
 	{
 		return [

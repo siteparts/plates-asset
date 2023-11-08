@@ -33,3 +33,5 @@ Use `assetUrl` in your template:
 ```html+php
 <img src="<?= $this->assetUrl("img/image.png") ?>" alt="...">
 ```
+
+For use with a PSR-11 container, you can also use the `ConfigProvider` supplied.
